@@ -109,7 +109,9 @@ Ejecuta el método main para verificar que:
 
 #### Preguntas de Análisis:
 - ¿Cómo mejora la legibilidad del código cliente el uso del patrón Builder?
+Se mejora gracias a que cada dato lleva su nombre, porque antes no te decia que era cada cosa, ademas te permite agregar unicamente los datos que necesitas.
 - ¿Qué ventaja tiene hacer la clase `Builder` estática e interna?
+Que al ser estatica le permite ser utilizada sin antes crear un user y al ser interna puede utilizar el constructor privado de user para que asi la unica forma de crear un user sea utilizando el Builder.
 - ¿Garantiza este patrón la inmutabilidad del objeto `User`? ¿Por qué?
-
+No, el Builder sirve para crear el objeto de una forma más ordenada, pero lo que hace que user no pueda cambiar despues de ser creado es que sus atributos son private final.
 ---
