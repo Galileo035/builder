@@ -117,4 +117,5 @@ Que al ser estatica le permite ser utilizada sin antes crear un user y al ser in
 - ¿Garantiza este patrón la inmutabilidad del objeto `User`? ¿Por qué?
 
 No, el Builder sirve para crear el objeto de una forma más ordenada, pero lo que hace que user no pueda cambiar despues de ser creado es que sus atributos son private final.
+
 ---
